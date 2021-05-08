@@ -1,4 +1,7 @@
 #include <stdio.h>
+/*
+* * a recursive function calling itself for more than one time
+*/
 void fun1(int x)
 {
     if (x > 0)
