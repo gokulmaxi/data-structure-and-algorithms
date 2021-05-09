@@ -28,6 +28,10 @@ double taylorSeriesN(int x , int n){
  * @result value of e^x 
 */
 double taylorSeriesR(int x, int n){
+    /**
+     * horners rule for n =3
+     * e^x=1+x/1 [ 1+x/2 [1+x/3] ]
+    */
     static double s;
     if (n==0)
     {
