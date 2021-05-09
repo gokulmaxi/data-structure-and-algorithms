@@ -32,7 +32,7 @@ double taylorSeriesR(int x, int n){
      * horners rule for n =3
      * e^x=1+x/1 [ 1+x/2 [1+x/3] ]
     */
-    static double s;
+    static double s=1;
     if (n==0)
     {
         return s;
@@ -47,7 +47,7 @@ double taylorSeriesR(int x, int n){
 }
 int main(int argc, char const *argv[])
 {
-    double result=taylorSeriesR(4,50);
+    double result=taylorSeriesR(4,10);
     printf("%lf \n",result);   // O\P = 54.598150
     return 0;
 }
