@@ -32,3 +32,16 @@ struct Node * arrayToLL(int a[],int n){
     }
     return firstNode;
 }
+/**
+ * @brief displays a linked list 
+ * 
+ * @param p pointer to the starting point of linked list
+ */
+void displayLL(struct Node *p){
+    while (p!=NULL)
+    {
+       printf("%d,",p->data);
+       p=p->next;
+    }
+    
+}
