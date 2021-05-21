@@ -45,3 +45,19 @@ void displayLL(struct Node *p){
     }
     
 }
+/**
+ * @brief counts the total nodes in the linked list
+ * 
+ * @param p pointer to the linked list to be counted
+ * @return int 
+ */
+int count(struct Node *p)
+{
+    int c = 0;
+    while (p != NULL)
+    {
+        c++;
+        p = p->next;
+    }
+    return c;
+}
