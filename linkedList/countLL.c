@@ -1,3 +1,24 @@
+/**
+ * @file countLL.c
+ * @author gokulakrishnan D P (dpgokulakrishnan.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-05-23
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+    1. If HEAD = NULL then
+        i) Print: “The linked list is empty”
+       ii) Return
+    2. Temp = HEAD
+    3. Repeat while Temp ≠ NULL
+        i) Print: Temp→DATA
+        ii) Set Temp = Temp→LINK
+        iii)i++
+    [End of Loop]
+    4. Return
+    
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "linkedList.h"
