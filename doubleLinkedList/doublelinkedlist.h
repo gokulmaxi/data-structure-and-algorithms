@@ -7,11 +7,13 @@ struct node{
 };
 
 void Display (struct node *head){
-    struct node * temp;
-    while (temp != NULL){
-    printf("%d ,",temp->data);
+    struct node * temp=head;
+    while (temp){
+    printf("%d,",temp->data);
     temp=temp->next;
     }
+    printf("\n");
+    
 }
 
 

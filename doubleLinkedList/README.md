@@ -1,10 +1,12 @@
 # double linked list
-## introduction    collection of node with three parts
-    
+## introduction    
+collection of node with three parts
+
         1. data  - contains the data
         2. right-link - address of the right node
         3. left-link - address of the left nodes 
-A generic double list code 
+A generic double list code
+
 ```c
 struct node 
 {
@@ -13,8 +15,9 @@ struct node
     struct node* prev;
 }
 ```
+
 ## algorithm for creating double linked list
-    
+
     1. create a new node
         1. allocate memory for new node
         2. if null print error "no memory"
@@ -29,4 +32,3 @@ struct node
             * set temp->prev=last
             * set last = temp
             * continue till i > list size
-
