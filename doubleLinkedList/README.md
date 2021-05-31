@@ -45,5 +45,25 @@ struct node
         5. set new ->next = pointer p
  3. set prev->next = new
  4. set p->prev = new
- 5. return 
-  
+ 5. return
+### similar algorithms
+  * invert the above algorithm to get insert after p in given dll
+  * use prev of head to insert at end of given ddl
+
+## ddl forward traverse
+>  dll_fTraverse(head)
+
+  1. [check for empty list]
+        * if head == NULL then 
+          * print "ddl is empty"
+          * return
+  2. set temp = head
+  3. while temp = null
+    1. print temp->data
+    2. set temp= temp->next
+    3. continue to loop
+  4. return
+
+        
+
+   
