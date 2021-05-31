@@ -18,13 +18,13 @@ struct node
 
 ## algorithm for creating double linked list
 
-    1. create a new node
+  1. create a new node
         1. allocate memory for new node
         2. if null print error "no memory"
         3. set new->data = data
         4. set new->prev = null 
         5. set new->next = null
-    2. set last = head and traverse through list and append 
+  2. set last = head and traverse through list and append 
         1. for i in list size  
             * allocate memeory to temp node
             * set temp->data = a[i]
@@ -32,3 +32,18 @@ struct node
             * set temp->prev=last
             * set last = temp
             * continue till i > list size
+## algorithm for adding node before any given node
+>  **add_before_dll(head,item,p)**
+  
+  adds a single node with data item before p one given dll head
+  1. set prev = p->prev
+  2. [create new node ]
+        1. allocate memeory for new node
+        2. check if null on new node -true overflow err and return 
+        3. set new->data = item
+        4. set new ->prev = prev
+        5. set new ->next = pointer p
+ 3. set prev->next = new
+ 4. set p->prev = new
+ 5. return 
+  

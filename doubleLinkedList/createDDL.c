@@ -1,6 +1,4 @@
 #include"doublelinkedlist.h"
-#include <stdio.h>
-#include <stdlib.h>
 struct node * doublelink;
 /**
  * @brief converts the given array to doublylinked list
