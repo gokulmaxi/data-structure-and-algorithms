@@ -64,6 +64,24 @@ struct node
     3. continue to loop
   4. return
 
+## search in doubly linked list
+> dll_search(head,item)
+
+  1. set tempNode = head and loc node to null
+  2. [check for empty list]
+        * if p = NULL then
+          * print linked list is empty 
+          * return
+  3. while tempNode != NULL 
+        * if tempNode->data = item 
+          * set loc = tempNode 
+          * return loc
+        * else
+          * tempNode = tempNode->next
+  4. [end of while loop]
+  5. print element not found 
+  6. return
+
         
 
    
