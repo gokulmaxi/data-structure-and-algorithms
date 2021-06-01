@@ -82,6 +82,18 @@ struct node
   5. print element not found 
   6. return
 
-        
+## deleting node form doubly linked list
 
-   
+### delete at beginning of the node
+> dll_delete_head(head)
+
+  1. [check for empty list]
+    * if head =  NULL then 
+        * print list is empty
+        * return
+  2. set temp = head
+  3. set head = temp->next
+  4. set head->prev = NULL
+  5. set temp->prev and temp->next = NULL
+  6. deallocate temp 
+  7. return

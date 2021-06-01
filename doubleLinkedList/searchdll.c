@@ -36,4 +36,5 @@ void main(){
         headDll=createDDL(arr,6);
         gLoc=search(headDll,4);
         printf("%d",gLoc->data);
+        return;
 }

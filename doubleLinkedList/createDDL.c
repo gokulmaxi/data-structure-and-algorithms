@@ -6,7 +6,7 @@ struct node * doublelink;
  * @param length length of the array
  * @return doublylinked list of the array
  */
-struct node * createDDL(int array[],int length){
+struct node * createDDLtest(int array[],int length){
         struct node * head = (struct node *)malloc(sizeof(struct node));
         struct node *last,*temp;
         if (!head)
@@ -31,7 +31,7 @@ struct node * createDDL(int array[],int length){
 
 int main(){
         int arr[]={1,2,3,4,5};
-        doublelink=createDDL(arr,5);
+        doublelink=createDDLtest(arr,5);
         Display(doublelink);               
 }
 
