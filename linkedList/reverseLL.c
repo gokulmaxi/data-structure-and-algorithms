@@ -60,6 +60,25 @@ void Reverse3(struct Node *q, struct Node *p)
     else
         first = q;
 }
+/**
+ * method used in geeks for geeks sliding pointer
+ */
+struct Node* reverseList(struct Node *head)
+    {
+        struct Node* prev = NULL; // init required node pointers
+        struct Node* current = head;
+        struct Node* next = NULL;
+        while (current != NULL) {
+       
+            next = current->next; // set next as currents next 
+ 
+            current->next = prev; // 
+ 
+            prev = current;
+            current = next;
+    }
+    return prev;
+    }
 
 int main()
 {
