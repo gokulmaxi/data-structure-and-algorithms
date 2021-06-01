@@ -84,11 +84,46 @@ struct node
 
 ## deleting node form doubly linked list
 
+
 ### delete at beginning of the node
 > dll_delete_head(head)
+>
+>  use a double pointer since head is only equal to the value of global head but
+>  does not changes the value as like reference which change the actual value passed
+>  for better understand analyse the below code
+  <details>
+  <summary>code example to explain above statement</summary>
 
+  ```c
+/* function definition to swap the actual  values passed */
+void swap(int *x, int *y) {
+
+   int temp;
+   temp = *x;    /* save the value at address x */
+   *x = *y;      /* put y into x */
+   *y = temp;    /* put temp into y */
+  
+   return;
+}
+
+/* function definition to swap the values but only inside the function
+ * not globally
+*/
+void swap(int x, int y) {
+
+   int temp;
+   temp = x;    /* save the value at address x */
+   x = y;      /* put y into x */
+   y = temp;    /* put temp into y */
+  
+   return;
+}
+  ```
+  
+  </details>
+  
   1. [check for empty list]
-    * if head =  NULL then 
+     * if head =  NULL then 
         * print list is empty
         * return
   2. set temp = head
@@ -97,3 +132,20 @@ struct node
   5. set temp->prev and temp->next = NULL
   6. deallocate temp 
   7. return
+#### similar algorithms
+* for deleting the end node traverse to the end of dll and use the above algorithm Accordingly
+* for deleting node before specified pointer inside ddl set a tempNode 
+ as p->prev and delete accordingly.
+* set tempnode as p->next for deleting node after specified pointer
+* for deleting node at specified index traverse through list until specified index and use the above algorithm accordingly.
+* for deleting a node by specified value use search algorithm to return address of the node and use the algorithm accordingly. 
+ -------
+##some important points 
+
+  * time complexity for insertion and deletion in O(1) as there is no movements of nodes
+  * time complexity of traversal is O(n)
+  * **circular double linked list**- head->prev = tail and tail->next = head
+  * dll consumes more mem for address storage
+  * direct access is not possible only through traversal
+  * searching is slow as only linear search is possible
+ 
