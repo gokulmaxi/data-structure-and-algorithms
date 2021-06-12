@@ -41,4 +41,33 @@
 1. if tree index != null and floor(index/2) != tree size 
     1. return [floor](https://www.tutorialspoint.com/c_standard_library/c_function_floor.htm)(index/2) 
 
+### traversal of binary trees 
+- there are three types of traversal:
+  * preorder traversal
+  * postorder traversal 
+  * inorder traversal 
 
+> preorder traversal
+
+- Root of tree -> left nodes -> right nodes
+- **preorder(n)**
+    * if n is not null 
+    * print n.data
+    * preorder(n.left) [move to left node continuously until null]
+    * preorder(n.right) 
+
+>postorder traversal
+- left node -> right node -> tree
+- **postorder(n)
+    * preorder(n.left)
+    * preorder(n.right)
+    * print(n.data)
+
+>Inorder traversal 
+- left node -> root -> right node 
+- this traversal is projection of tree on array 
+-  **inorder(n)
+    * if n is not null 
+    * inorder(n.left)
+    * print(n.data)
+    * inorder(n.right)
