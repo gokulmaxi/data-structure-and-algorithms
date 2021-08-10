@@ -19,7 +19,7 @@ private: // accessable by only this class
 // Derived class
 class Rectangle : public Shape {
 public:
-  int getArea() { return (width * height); }
+ const int getArea() { return (width * height); }
 };
 
 int main(void) {
