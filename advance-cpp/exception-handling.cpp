@@ -10,11 +10,11 @@ double division(int a, int b)
     //   throw "division by zero";
     ans = a / b;
   }
-  catch (const std::exception &e)
+  catch (...)
   {
     cout << "i reached here-2" << endl;
 
-    std::cerr << e.what() << '\n';
+    // std::cerr << e.what() << '\n';
   }
   cout << "i reached here" << endl;
   return ans;
@@ -28,16 +28,15 @@ int main()
 
   try
   {
-
     z = division(x, y);
     cout << "answer:" << z << endl;
   }
 
-  catch (const char *msg)
+  catch (...)
   {
     cout << "i reached here-1" << endl;
 
-    cerr << msg << endl;
+    // cerr << msg << endl;
   }
 
   return 0;

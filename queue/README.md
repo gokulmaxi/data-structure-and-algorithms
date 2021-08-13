@@ -45,3 +45,4 @@
   3. return 
   
     
+(eception)[https://www.geeksforgeeks.org/handling-the-divide-by-zero-exception-in-c/#:~:text=Dividing%20a%20number%20by%20Zero,which%20cannot%20be%20further%20processed.]
